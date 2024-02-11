@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "start": "node dist/index.js",
-    "dev": "npx nodemon"
+    "start: prod": "npm run build && node dist/index.js",
+    "start: dev": "npx nodemon ./src/index.ts",
+    "start: multi": "npx nodemon ./src/multi.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.1",

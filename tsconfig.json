@@ -10,7 +10,13 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
   },
   "include": [
     "src/**/*"
